@@ -11,7 +11,7 @@ import microsoftLogo from './assets/logos/Microsoft_logo_(2012).svg';
 import arrows from './assets/arrows.svg';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './App.css';
+import './App.scss';
 
 
 const App = () => {

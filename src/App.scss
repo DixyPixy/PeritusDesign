@@ -458,7 +458,7 @@ html{
       width:100%;
     }
    
-    #navbar li{
+   #navbar li{
       font-size: 17px;
       float:left;
       display:inline;
@@ -557,27 +557,17 @@ html{
     padding: 1%;
     height:10%;
   }
-  #navbar li{
-    float:left;
-    font-size: small;
-    display:inline;
-    padding-left:5%;
-    padding-top:1.5%;
-    padding-bottom:3%;
-  }
+ 
   #header-pic{
     height: 39vw;
   }
   #ueberUns{
     height:300px;
   }
-
-
 }
   
   @media only screen and (max-width:620px) {
 
-  
     .footerNav div{
       background-color:#f0f0f8;
       padding:0.5%;
