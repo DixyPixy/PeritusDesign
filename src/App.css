@@ -559,13 +559,11 @@ html{
   }
   #navbar li{
     float:left;
+    font-size: small;
     display:inline;
     padding-left:5%;
     padding-top:1.5%;
     padding-bottom:3%;
-  }
-  ul{ 
-    padding:0;
   }
   #header-pic{
     height: 39vw;
@@ -574,9 +572,11 @@ html{
     height:300px;
   }
 
+
 }
   
   @media only screen and (max-width:620px) {
+
   
     .footerNav div{
       background-color:#f0f0f8;
@@ -699,6 +699,7 @@ html{
   #navbar{
     padding-top:3%;
   }
+  #navbar ul{padding: 0;}
   #navbar li{
     font-size: 17px;
     float:none;
@@ -808,7 +809,7 @@ html{
   }
   #logo-pic{
     padding-left: 0;
-  padding-bottom: 5%;;
+  padding-bottom: 5%;
   }
   #nav .hamburger {
     background:#fff;

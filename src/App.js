@@ -64,6 +64,16 @@ const App = () => {
     
     console.log(current)
 
+    const myFunction = () => {
+      const x = document.getElementById("navbar");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    
+    }
+
   return (
     <div className="App">
       <header className="App-header" id ="header">
@@ -88,7 +98,7 @@ const App = () => {
                     </ul>
                 </div>
             
-                  <div className="hamburger" onclick="myFunction()" >
+                  <div className="hamburger" onClick={()=> myFunction()} >
                     <div className="bar1"></div>
                     <div className="bar2"></div>
                     <div className="bar3"></div>
