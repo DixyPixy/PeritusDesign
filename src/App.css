@@ -68,7 +68,7 @@ html{
       margin-right:3%;
   }
   #header-pic{
-    height: 40%;
+    height:30vw;
   }
   #header-pic img{
       width:100%;
@@ -226,14 +226,12 @@ html{
       width:50%;
       margin:auto;
       color:#fff;
-      top:-3.5vw;
+      top:-8vw;
     }
-    /* Slides */
-    .mySlides {
-      display: none;
-      padding: 2%;
-      text-align: center;
-    }
+
+    .mySlides{padding: 5% 5% 0 5%;}
+
+  
     /* Next & previous buttons */
     .prev, 
     .next {
@@ -273,11 +271,11 @@ html{
     .dot-container {
       position: relative;
       text-align: center;
-      padding: 1.5%;
+      padding: 1.5% 5% 1.5% 5%;
       background: #0062cc;
-      width:47%;
+      width:auto;
       margin:auto;
-      top:-13vw;
+      top:0;
     }
     
     /* The dots/bullets/indicators */
@@ -299,9 +297,7 @@ html{
       height: 10px;
       width: 10px;
     }
-    
-    /* Add an italic font style to all quotes */
-    q {font-style: italic;}
+  
     
     /* Add a blue color to the author */
     .author {color: cornflowerblue;}
@@ -320,9 +316,7 @@ html{
     }
   
   @media only screen and (max-width:1692px){
-      .dot-container {
-        top:-14vw;
-       }
+      
       #main p{
         padding-top:60%;
       }
@@ -342,34 +336,26 @@ html{
       }}
   
   @media only screen and (max-width:1478px) {
-    .dot-container {
-     top:-14vw;
-    }
+   
      #main p{
       padding-top:60%;
     }}
   
   @media only screen and (max-width:1362px) {
-    .dot-container {
-     top:-14vw;
-    }
+   
     #header-pic{
-      height:50%;
+      height:30vw;
     }
   }
   
   @media only screen and (max-width:1198px) {
-    .dot-container {
-     top:-15vw;
-    }
+    
     #main p{
       padding-top:80%;
     }}
   
   @media only screen and (max-width:1052px) {
-    .dot-container {
-     top:-16vw;
-    }
+
   
     #main{
       padding-left:10%;
@@ -407,19 +393,12 @@ html{
     top:110%;
     right:-450px; 
   }
-  #header-pic{
-    height:40%;
-  }}
+ }
   
-  @media only screen and (max-width:938px) {
-    .dot-container {
-     top:-19vw;
-    }}
+ 
   
   @media only screen and (max-width:870px) {
-    .dot-container {
-     top:-20vw;
-    }
+    
     #main{
       padding-left:10%;
       padding-top:15%;
@@ -459,17 +438,13 @@ html{
     top:80%;
     right:-450px; 
   }
-  #header-pic{
-    height:35%;
-  }
+  
   
 }
   
   @media only screen and (max-width:798px) {
-    .dot-container {
-     top:-21vw;
-    }
-   
+    
+   #main{padding-top: 25vw;}
     #header{
       height:80px;
     }
@@ -482,9 +457,7 @@ html{
       padding: 1%;
       width:100%;
     }
-    #header-pic{
-      height:40%;
-    }
+   
     #navbar li{
       font-size: 17px;
       float:left;
@@ -512,6 +485,7 @@ html{
     .dot-container {
      display:none;
     }
+    .mySlides{padding-bottom: 2%;}
   
     #adress{
       display:none;
@@ -535,9 +509,22 @@ html{
       padding-top: 5%;
       margin-bottom:5%;   
   }
-  .slideshow-container{
-    width:100%;
-  }
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 8px;
+  background-color: #333;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
   #header{
     height:80px;
   }
@@ -553,6 +540,7 @@ html{
     float:left;
     background-color:#fff;
   }
+
   #main img{
   width:50px;
   height:50px;
@@ -564,6 +552,7 @@ html{
       padding-top:30%;
     }
   #logo-pic{
+    display: flex;
     float:left;
     padding: 1%;
     height:10%;
@@ -579,7 +568,7 @@ html{
     padding:0;
   }
   #header-pic{
-    height:50%;
+    height: 39vw;
   }
   #ueberUns{
     height:300px;
@@ -601,6 +590,7 @@ html{
     .footerNav  div p:first-of-type{
       display:none;
     }
+    #main{ padding-top:30vw; }
     #main p{
       padding-top:40%;
     }
@@ -651,7 +641,7 @@ html{
     margin-bottom:2%;
     }
     #header-pic{
-      height:40%;
+      height:40vw;
     }
     #header{
       height:100px;
@@ -664,6 +654,7 @@ html{
     }
     .slideshow-container{
       width:100%;
+      top: -1vw;
     }
     #masc-photo-left{
      display:none;
@@ -810,8 +801,10 @@ html{
 }
 
   @media only screen and (max-width:360px) {
-  #header-pic{
-    height:25%;
+  
+  .slideshow-container{top:-1vw;}
+    #header-pic{
+    height:50vw;
   }
   #logo-pic{
     padding-left: 0;
