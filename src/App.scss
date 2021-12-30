@@ -55,20 +55,30 @@ html{
       float:left;
       padding: 1%;
   }
+  #navbar{
+    display: flex;
+    justify-content: flex-end;
+    width: inherit;
+    margin-right: 3%;
+  }
   #navbar li{
       font-size: 17px;
-      float:right;
-      display:inline;
       padding-top:1.5%;
       padding-left:2%;
       padding-right:2%;
       color:#000;
+      width: max-content;
   }
-  #navbar ul:last-child{
-      margin-right:3%;
+  #navbar ul{
+    list-style-type:none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    list-style-type: none;
+    
   }
   #header-pic{
-    height:30vw;
+    height:25vw;
   }
   #header-pic img{
       width:100%;
@@ -339,12 +349,16 @@ html{
    
      #main p{
       padding-top:60%;
-    }}
+    }
+  #navbar{width: inherit;}
+  }
   
   @media only screen and (max-width:1362px) {
-   
-    #header-pic{
-      height:30vw;
+
+    #nav{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
     }
   }
   
@@ -356,24 +370,7 @@ html{
   
   @media only screen and (max-width:1052px) {
 
-  
-    #main{
-      padding-left:10%;
-      padding-top:15%;
-      padding-bottom: 5%;
-      background-color:#f0f0f8;
-      width:80%;
-      height:500px;
-      margin:auto;
-      }
-    #main div{ 
-      position:relative;
-      width:25%;
-      height:40%;
-      margin:2%;
-      float:left;
-      background-color:#fff;
-  }
+  #navbar{width: inherit;}
   #main img{
     width:80px;
     height:80px;
@@ -399,6 +396,14 @@ html{
   
   @media only screen and (max-width:870px) {
     
+    #header{
+      height:80px;
+    }
+    #right{
+      float:left;
+      margin-left:3%;
+    }
+
     #main{
       padding-left:10%;
       padding-top:15%;
@@ -407,14 +412,6 @@ html{
       width:80%;
       height:400px;
       margin:auto;
-  }
-    #main div{ 
-      position:relative;
-      width:25%;
-      height:40%;
-      margin:2%;
-      float:left;
-      background-color:#fff;
   }
   #main img{
     width:80px;
@@ -438,35 +435,19 @@ html{
     top:80%;
     right:-450px; 
   }
-  
+  #nav{
+    display: flex;}
   
 }
   
   @media only screen and (max-width:798px) {
-    
-   #main{padding-top: 25vw;}
-    #header{
-      height:80px;
+    #nav{
+      display: table-row;
+      width: 100vw;
     }
-    #right{
-      float:left;
-      margin-left:3%;
-    }
-    #logo-pic{
-      float:left;
-      padding: 1%;
-      width:100%;
-    }
-   
-   #navbar li{
-      font-size: 17px;
-      float:left;
-      display:inline;
-      padding-top:1.5%;
-      padding-left:5%;
-      padding-right:2%;
-      padding-bottom:3%;
-    }
+    #navbar ul{padding: 0;}
+    #navbar{justify-content: center;} 
+    #logo-pic{ padding: 1%;}
     #masc-photo-left{
       position: absolute;
       top:145%;
@@ -529,16 +510,8 @@ html{
     height:80px;
   }
   #right{
-    float:left;
+    
     margin-left:3%;
-  }
-  #main div{ 
-    position:relative;
-    width: 40%;
-    height:25%;
-    margin:2%;
-    float:left;
-    background-color:#fff;
   }
 
   #main img{
@@ -547,19 +520,6 @@ html{
   position:absolute;
   top:25%;
   left:35%;
-  }
-   #main p{
-      padding-top:30%;
-    }
-  #logo-pic{
-    display: flex;
-    float:left;
-    padding: 1%;
-    height:10%;
-  }
- 
-  #header-pic{
-    height: 39vw;
   }
   #ueberUns{
     height:300px;
@@ -580,16 +540,20 @@ html{
     .footerNav  div p:first-of-type{
       display:none;
     }
-    #main{ padding-top:30vw; }
+    #main{ 
+      padding-top:20vw; 
+      height: 300px;
+    }
     #main p{
-      padding-top:40%;
+      padding-top:60%;
     }
     #nav .hamburger {
-      background:#fff;
+      background: transparent;
+      cursor: pointer;
       display: block;
       position: absolute;
-      right: 5%;
-      top: 17%;
+      right: 3vw;
+      top: 16%;
     }
     #nav a:hover {
       background-color: #ddd;
@@ -598,10 +562,6 @@ html{
     .active {
       background-color: #04AA6D;
       color: white;
-    }
-    .hamburger {
-      display: inline-block;
-      cursor: pointer;
     }
     
     #navbar {
@@ -626,19 +586,13 @@ html{
       transform: rotate(45deg) translate(-8px, -8px);
     }
     #logo-pic{
-    height:5%;
-    margin-top:5%;
-    margin-bottom:2%;
+      margin-bottom:2vw;
+      margin-top: 6%;
     }
-    #header-pic{
-      height:40vw;
-    }
-    #header{
-      height:100px;
-    }
+    #header{height:100px;}
   }
   
-  @media only screen and (max-width:427px) {
+  @media only screen and (max-width:510px) {
     .dot-container {
      display:none;
     }
@@ -664,15 +618,8 @@ html{
       float:left;
       background-color:#fff;
   }
-  #main img{
-    width:50px;
-    height:50px;
-    position:absolute;
-    top:35%;
-    left:25%;
-  }
   #main p{
-      padding-top:70%;
+      padding-top:60%;
     }
   #sidebar{
     margin-bottom:5%;
@@ -687,9 +634,13 @@ html{
    display:none;
   }
   #navbar{
-    padding-top:3%;
+    text-align: -webkit-center;
   }
-  #navbar ul{padding: 0;}
+  #navbar ul{
+    display: block;
+    padding: 0;
+    width: 100vw;
+  }
   #navbar li{
     font-size: 17px;
     float:none;
@@ -701,13 +652,7 @@ html{
    
   }
   #logo-pic{
-    width:100%;
-    float:none;
-    padding-left:20%;
-    margin-top:0;
-    height:5%;
-    margin-top:5%;
-    margin-bottom:5%;
+    margin-top:4%;
   }
   .footerNav ul{
     padding-left:0px;
@@ -724,7 +669,7 @@ html{
     margin-left:0;
   }
   #header-pic{
-    height:20%;
+    height:40vw;
   }
   .author{
     color:#fff;
@@ -738,10 +683,6 @@ html{
   button{
     margin-left:35%;
   }
-  #nav{
-    padding-bottom:3%;
-    margin-bottom: 10%;
-  }
   #nav a{
   color: white;
   padding: 14px 16px;
@@ -750,11 +691,7 @@ html{
   display: block;
 }
 #nav .hamburger {
-  background:#fff;
-  display: block;
-  position: absolute;
-  right: 47%;
-  top: 25%;
+  top: 17%;
 }
 #nav a:hover {
   background-color: #ddd;
@@ -766,10 +703,6 @@ html{
 }
 #navbar{
   display:none;
-}
-.hamburger {
-  display: inline-block;
-  cursor: pointer;
 }
 
 .bar1, .bar2, .bar3 {
@@ -801,13 +734,7 @@ html{
     padding-left: 0;
   padding-bottom: 5%;
   }
-  #nav .hamburger {
-    background:#fff;
-    display: block;
-    position: absolute;
-    right: 47%;
-    top: 23%;
-  }
+  #main p{padding-top: 80%;}
   
   
 }
