@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -15,29 +16,43 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div id="if">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.2389033502623!2d14.020949915716422!3d48.16347667922553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4773f2bc8b9e034d%3A0xf8e4cccd382b30cb!2sPeritus%20Webdesign%20GmbH!5e0!3m2!1sen!2s!4v1629639163143!5m2!1sen!2s" 
+      width="100%" height="600" style="border:0;" 
+      allowfullscreen="" loading="lazy"></iframe>
+      <div id="adress">
+        
+              <div id="adressText">
+              <h2>Peritus Webdesign GmbH</h2>
+              <p>Anzengruberstraße 10</p>
+              <p>A-4600 Wels</p>
+              <p>Tel: +43(0)8768/98768</p>
+              <p>Fax: +43(0)9874/98767-87</p>
+              <p>Email:wir@peritus-webdesign.com</p>
+              <p>Öffnungszeiten</p>
+              <p>MO-DO 08:00 - 12:00 und 13:00 - 17:00 Uhr</p>
+              <p>FR 08:00 - 13:00 Uhr</p></div>
+          
+      </div></div>
+      <div id="footer">
+        <div class="footerNav">
+            <ul>
+              <a href="#">  <li>Foobar</li></a>
+               <a href="#"> <li>Über uns</li></a>
+               <a href="#"> <li>Kontakt</li></a>
+              <a href="#">  <li>Impressum</li></a>
+            
+            </ul>
+            <div><a href="#header"><img src="%PUBLIC_URL%/arrows.svg" alt="nach-oben-scroll"/></a>
+                <p>nach oben</p>
+            </div>
+            <p>@Copyright 2016 Peritus Webdesign</p>
+        </div>
+    </div> 
   </body>
 </html>

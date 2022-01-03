@@ -8,13 +8,13 @@ import cup from './assets/cup.svg';
 import stampp from './assets/stamppp.jpg';
 import table from './assets/table.jpg';
 import microsoftLogo from './assets/logos/Microsoft_logo_(2012).svg';
-import arrows from './assets/arrows.svg';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.scss';
 
 
 const App = () => {
+  
   const quotes = [
     { 
       quote: "I love you the more in that I believe you had liked me for my own sake and for nothing else",
@@ -64,15 +64,18 @@ const App = () => {
     
     console.log(current)
 
+    
+
     const myFunction = () => {
       const x = document.getElementById("navbar");
       if (x.style.display === "flex") {
         x.style.display = "none";
+        
       } else {
         x.style.display = "flex";
       }
-    
     }
+  
 
   return (
     <div className="App">
@@ -98,10 +101,13 @@ const App = () => {
                     </ul>
                 </div>
             
-                  <div className="hamburger" onClick={()=> myFunction()} >
-                    <div className="bar1"></div>
-                    <div className="bar2"></div>
-                    <div className="bar3"></div>
+                  <div className= "hamburger" onClick={()=> { 
+                    myFunction();
+                   
+                  }} >
+                    <div className="bar bar1" ></div>
+                    <div className="bar bar2" ></div>
+                    <div className="bar bar3" ></div>
                   </div>
             </div>
     <div id="header-pic">
@@ -172,22 +178,7 @@ const App = () => {
    <a href="#"> <div><img src={microsoftLogo} alt="laser-masicne" /></div></a>
    <a href="#"> <div><img src={microsoftLogo} alt="laser-masicne" /></div></a>
      
-   </div>
-              <div id="footer">
-                <div className="footerNav">
-                    <ul>
-                      <a href="#">  <li>Foobar</li></a>
-                       <a href="#"> <li>Über uns</li></a>
-                       <a href="#"> <li>Kontakt</li></a>
-                      <a href="#">  <li>Impressum</li></a>
-                    
-                    </ul>
-                    <div><a href="#header"><img src={arrows} alt="nach-oben-scroll"/></a>
-                        <p>nach oben</p>
-                    </div>
-                    <p>@Copyright 2016 Peritus Webdesign</p>
-                </div>
-            </div>      
+   </div>                
     </div>
   );
 }
@@ -224,4 +215,8 @@ function Dots({dotQty, current, dotPicksQuote}) {
 
 ReactDOM.render(<App />, document.querySelector('#root'))
 
-export default App;
+export default App();
+
+
+
+

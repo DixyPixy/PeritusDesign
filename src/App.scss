@@ -3,11 +3,6 @@
   background-color: #fff;
   min-height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
 html{
   overflow-x:hidden;
   }
@@ -197,7 +192,6 @@ html{
         height:500px;
         width:500px;
         color:#fff;
-        padding-left:2%;
     }
     #adress img{
         width:20px;
@@ -205,6 +199,7 @@ html{
     }
     #adressText{
         margin-left:15%;
+        margin-top: 15%;
     }
     #masc-photo-right{
         position: absolute;
@@ -361,12 +356,9 @@ html{
       justify-content: space-between;
     }
   }
-  
   @media only screen and (max-width:1198px) {
     
-    #main p{
-      padding-top:80%;
-    }}
+    #main p{padding-top:80%;}}
   
   @media only screen and (max-width:1052px) {
 
@@ -391,28 +383,17 @@ html{
     right:-450px; 
   }
  }
-  
- 
-  
-  @media only screen and (max-width:870px) {
+  @media only screen and (max-width:830px) {
     
-    #header{
-      height:80px;
-    }
+    #header{height:80px;}
+
     #right{
       float:left;
       margin-left:3%;
     }
 
-    #main{
-      padding-left:10%;
-      padding-top:15%;
-      padding-bottom: 5%;
-      background-color:#f0f0f8;
-      width:80%;
-      height:400px;
-      margin:auto;
-  }
+    #main{height:400px;}
+
   #main img{
     width:80px;
     height:80px;
@@ -420,25 +401,24 @@ html{
     top:25%;
     left:25%;
   }
-  #main p{
-  padding-top:70%;
-      }
+  #main p{padding-top:70%;}
+
   #masc-photo-left{
     position: absolute;
     top:140%;
     background-repeat: no-repeat;
     left:-200px;
   }
+
   #masc-photo-right{
     position: absolute;
     background-repeat: no-repeat;
     top:80%;
     right:-450px; 
   }
-  #nav{
-    display: flex;}
-  
-}
+
+  #nav{display: flex;}
+  }
   
   @media only screen and (max-width:798px) {
     #nav{
@@ -446,14 +426,18 @@ html{
       width: 100vw;
     }
     #navbar ul{padding: 0;}
+
     #navbar{justify-content: center;} 
+
     #logo-pic{ padding: 1%;}
+
     #masc-photo-left{
       position: absolute;
       top:145%;
       background-repeat: no-repeat;
       left:-250px;
     }
+
     #masc-photo-right{
       position: absolute;
       background-repeat: no-repeat;
@@ -463,14 +447,12 @@ html{
   }
   
   @media only screen and (max-width:750px) {
-    .dot-container {
-     display:none;
-    }
+    .dot-container {display:none;}
+
     .mySlides{padding-bottom: 2%;}
   
-    #adress{
-      display:none;
-    }
+    #adress{display:none;}
+
     #masc-photo-left{
       position: absolute;
       top:150%;
@@ -490,9 +472,6 @@ html{
       padding-top: 5%;
       margin-bottom:5%;   
   }
-
-
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -505,14 +484,9 @@ html{
   transition: background-color 0.6s ease;
 }
 
+  #header{height:80px;}
 
-  #header{
-    height:80px;
-  }
-  #right{
-    
-    margin-left:3%;
-  }
+  #right{margin-left:3%;}
 
   #main img{
   width:50px;
@@ -521,6 +495,7 @@ html{
   top:25%;
   left:35%;
   }
+
   #ueberUns{
     height:300px;
   }
@@ -537,16 +512,15 @@ html{
       right:5%;
       bottom:40%;
     }
-    .footerNav  div p:first-of-type{
-      display:none;
-    }
+
+    .footerNav  div p:first-of-type{display:none;}
+
     #main{ 
       padding-top:20vw; 
       height: 300px;
     }
-    #main p{
-      padding-top:60%;
-    }
+    #main p{padding-top:60%;}
+    
     #nav .hamburger {
       background: transparent;
       cursor: pointer;
@@ -568,20 +542,20 @@ html{
       display:none;
     }
     
-    .bar1, .bar2, .bar3 {
+    .bar {
       width: 35px;
       height: 5px;
       background-color: #333;
       margin: 6px 0;
       transition: 0.4s;
     }
-    .change .bar1 {
+    .show .bar1 {
       -webkit-transform: rotate(-45deg) translate(-9px, 6px);
       transform: rotate(-45deg) translate(-9px, 6px);
     }
-    .change .bar2 {opacity: 0;}
+    .show .bar2 {opacity: 0;}
     
-    .change .bar3 {
+    .show .bar3 {
       -webkit-transform: rotate(45deg) translate(-8px, -8px);
       transform: rotate(45deg) translate(-8px, -8px);
     }
@@ -600,6 +574,8 @@ html{
       width:100%;
       top: -1vw;
     }
+    .headdivs{text-align: left;}
+    
     #masc-photo-left{
      display:none;
     }
@@ -662,11 +638,11 @@ html{
     height:100px;
   }
   #right{
-    float:none;
+   
     margin-right:0;
   }
   #left{
-    margin-left:0;
+    margin-left:3%;
   }
   #header-pic{
     height:40vw;
@@ -689,9 +665,6 @@ html{
   text-decoration: none;
   font-size: 17px;
   display: block;
-}
-#nav .hamburger {
-  top: 17%;
 }
 #nav a:hover {
   background-color: #ddd;
@@ -726,6 +699,7 @@ html{
 
   @media only screen and (max-width:360px) {
   
+    .headdivs p{margin-top: 10px; margin-bottom: 0;}
   .slideshow-container{top:-1vw;}
     #header-pic{
     height:50vw;
