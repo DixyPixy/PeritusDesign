@@ -10,7 +10,7 @@ import table from './assets/table.jpg';
 import microsoftLogo from './assets/logos/Microsoft_logo_(2012).svg';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './App.scss';
+import './stylings/App.scss';
 
 
 const App = () => {
