@@ -1,0 +1,5 @@
+@mixin mask-photo {
+    -webkit-mask-box-image:url(../assets/mask.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+}

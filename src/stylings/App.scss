@@ -1,3 +1,5 @@
+@import './mixins/mixins.scss';
+
 .App {
   text-align: center;
   background-color: #fff;
@@ -208,19 +210,15 @@ html{overflow-x:hidden;}
     }
 
     #masc-photo-right{
-        -webkit-mask-box-image:url(../assets/mask.svg);
-        position: absolute;
-        background-repeat: no-repeat;
+        @include mask-photo;
         top:70vw;
         right:-400px; 
     }
 
     #masc-photo-left{
-      -webkit-mask-box-image:url(../assets/mask.svg);
-      position: absolute;
-      top:130%;
-      background-repeat: no-repeat;
-      left:-200px;  
+        @include mask-photo;
+        top:130%;
+        left:-200px;  
   }
 
   #unsereKunden{
@@ -321,18 +319,14 @@ html{overflow-x:hidden;}
       #main p{padding-top:60%;}
 
       #masc-photo-right{
-        -webkit-mask-box-image:url(../assets/mask.svg);
-        position: absolute;
-        background-repeat: no-repeat;
+        @include mask-photo;
         top:130%;
         right:-400px; 
       }
 
        #masc-photo-left{
-        -webkit-mask-box-image:url(../assets/mask.svg);
-        position: absolute;
+        @include mask-photo;
         top:190%;
-        background-repeat: no-repeat;
         left:-200px;
       }
     }
@@ -369,15 +363,11 @@ html{overflow-x:hidden;}
   }
 
   #masc-photo-left{
-    position: absolute;
     top:170%;
-    background-repeat: no-repeat;
     left:-200px;
   }
 
   #masc-photo-right{
-    position: absolute;
-    background-repeat: no-repeat;
     top:110%;
     right:-450px; 
   }
@@ -404,15 +394,11 @@ html{overflow-x:hidden;}
   }
 
   #masc-photo-left{
-    position: absolute;
     top:140%;
-    background-repeat: no-repeat;
     left:-200px;
   }
 
   #masc-photo-right{
-    position: absolute;
-    background-repeat: no-repeat;
     top:80%;
     right:-450px; 
   }
@@ -434,15 +420,11 @@ html{overflow-x:hidden;}
     #logo-pic{ padding: 1%;}
 
     #masc-photo-left{
-      position: absolute;
       top:145%;
-      background-repeat: no-repeat;
       left:-250px;
     }
 
     #masc-photo-right{
-      position: absolute;
-      background-repeat: no-repeat;
       top:100%;
       right:-500px; 
     }
@@ -456,15 +438,11 @@ html{overflow-x:hidden;}
     #adress{display:none;}
 
     #masc-photo-left{
-      position: absolute;
       top:150%;
-      background-repeat: no-repeat;
       left:-300px;
     }
 
     #masc-photo-right{
-      position: absolute;
-      background-repeat: no-repeat;
       top:100%;
       right:-500px; 
     }
