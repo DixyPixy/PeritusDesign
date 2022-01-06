@@ -1,13 +1,7 @@
-import logo from './assets/logo.svg';
+import IMAGES from './assets/index.js';
 import headphoto from './assets/headphoto.jpg';
-import laserMaschine from './assets/laser-machine.svg';
-import cut from './assets/cut.svg';
-import transport from './assets/transport-2.svg';
-import stamp from './assets/stamp.svg';
-import cup from './assets/cup.svg';
 import stampp from './assets/stamppp.jpg';
 import table from './assets/table.jpg';
-import microsoftLogo from './assets/logos/Microsoft_logo_(2012).svg';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './stylings/App.scss';
@@ -89,7 +83,7 @@ const App = () => {
       </header>
       <div id="nav">
                 <div id="logo-pic" class="navDivs">
-                <img src={logo} className="App-logo" alt="logo" />
+                <img src={IMAGES.logo} className="App-logo" alt="logo" />
                 </div>
                 <div id="navbar" class="navDivs">
                     <ul>
@@ -111,7 +105,7 @@ const App = () => {
                   </div>
             </div>
     <div id="header-pic">
-            <img src={headphoto} alt="logo" />
+            <img src={headphoto} alt="headphoto" />
             
             <section>
       <div className="slideshow-container">
@@ -128,12 +122,12 @@ const App = () => {
   
 <div id="main">
 
-<a href="#"><div><img src={laserMaschine} alt="laser-masicne" /><p>Lasertechnik</p></div></a>
-<a href="#"><div><img src={cut} alt="laser-masicne" /><p>Gravurtechnik</p></div></a>
-<a href="#"> <div><img src={transport} alt="laser-masicne" /><p>Tampondruck</p></div></a>
-<a href="#"> <div><img src={laserMaschine} alt="laser-masicne" /><p>Werbetechnik</p></div></a>
-<a href="#"><div><img src={stamp} alt="laser-masicne" /><p>Stempel</p></div></a>
-<a href="#"> <div><img src={cup} alt="laser-masicne" /><p>Pokale</p></div></a>
+<a href="#"><div><img src={IMAGES.laserMaschine} alt="laser-masicne" /><p>Lasertechnik</p></div></a>
+<a href="#"><div><img src={IMAGES.cut} alt="laser-masicne" /><p>Gravurtechnik</p></div></a>
+<a href="#"> <div><img src={IMAGES.transport} alt="laser-masicne" /><p>Tampondruck</p></div></a>
+<a href="#"> <div><img src={IMAGES.laserMaschine} alt="laser-masicne" /><p>Werbetechnik</p></div></a>
+<a href="#"><div><img src={IMAGES.stamp} alt="laser-masicne" /><p>Stempel</p></div></a>
+<a href="#"> <div><img src={IMAGES.cup} alt="laser-masicne" /><p>Pokale</p></div></a>
 
 </div>
 <div id="sidebar">
@@ -170,13 +164,13 @@ const App = () => {
 
             <div className="slider">    
    
-   <a href="#"> <div><img src={microsoftLogo} alt="laser-masicne" /></div></a>
-   <a href="#"> <div><img src={microsoftLogo} alt="laser-masicne" /></div></a>
-   <a href="#"> <div><img src={microsoftLogo} alt="laser-masicne" /></div></a>
-   <a href="#"> <div><img src={microsoftLogo} alt="laser-masicne" /></div></a>
-   <a href="#"> <div><img src={microsoftLogo} alt="laser-masicne" /></div></a>
-   <a href="#"> <div><img src={microsoftLogo} alt="laser-masicne" /></div></a>
-   <a href="#"> <div><img src={microsoftLogo} alt="laser-masicne" /></div></a>
+   <a href="#"> <div><img src={IMAGES.microsoftLogo} alt="laser-masicne" /></div></a>
+   <a href="#"> <div><img src={IMAGES.microsoftLogo} alt="laser-masicne" /></div></a>
+   <a href="#"> <div><img src={IMAGES.microsoftLogo} alt="laser-masicne" /></div></a>
+   <a href="#"> <div><img src={IMAGES.microsoftLogo} alt="laser-masicne" /></div></a>
+   <a href="#"> <div><img src={IMAGES.microsoftLogo} alt="laser-masicne" /></div></a>
+   <a href="#"> <div><img src={IMAGES.microsoftLogo} alt="laser-masicne" /></div></a>
+   <a href="#"> <div><img src={IMAGES.microsoftLogo} alt="laser-masicne" /></div></a>
      
    </div>                
     </div>
