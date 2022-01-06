@@ -1,9 +1,10 @@
 @import './mixins/mixins.scss';
 @import './mixins/variables.scss';
+@import "../../bower_components/mappy-breakpoints/mappy-breakpoints";
 
 .App {
   text-align: center;
-  background-color: #fff;
+  background-color: $light;
   min-height: 100vh;
 }
 
@@ -17,10 +18,10 @@ html{overflow-x:hidden;}
   }
 
   #header{
-      background-color:#0062cc;
+      background-color: $metaMenuBlue;
       min-height:3vh;
       padding-bottom:2%;
-      color:white;   
+      color: $light;   
   }
 
   a{
@@ -29,17 +30,17 @@ html{overflow-x:hidden;}
         text-decoration: none; 
     }
     &:visited{color:#000;}
-    &:hover{color:#0062cc;}
+    &:hover{color: $metaMenuBlue;}
 }
 
   button {
-    a:visited{color:#0062cc;}
-    &:hover{box-shadow: 0 0 1em 2px #0062cc;}
+    a:visited{color: $metaMenuBlue;}
+    &:hover{box-shadow: 0 0 1em 2px $metaMenuBlue;}
   }
 
   /*first two divs with phone number and working hours*/
   .headdivs{
-     text-align:center;
+     text-align: center;
      font-size: 15px;
   }
 
@@ -72,7 +73,7 @@ html{overflow-x:hidden;}
       padding-right:2%;
       color:#000;
       width: max-content;
-      &:hover{color: #0062cc;}
+      &:hover{color: $metaMenuBlue;}
     }
     ul{
     list-style-type:none;
@@ -81,6 +82,7 @@ html{overflow-x:hidden;}
     gap: 1.5rem;
     list-style-type: none; 
     }
+    @include mappy-bp(ssm sm){justify-content: center;}
   }
 
   #header-pic{height:25vw;}
@@ -98,7 +100,7 @@ html{overflow-x:hidden;}
       padding-left:10%;
       padding-top:15%;
       padding-bottom: 5%;
-      background-color:#f0f0f8;
+      background-color: $mainColor;
       width:80%;
       height:600px;
       margin:auto;
@@ -117,11 +119,11 @@ html{overflow-x:hidden;}
       height:40%;
       margin:2%;
       float:left;
-      background-color:#fff;
+      background-color: $light;
     }
   }
   #sidebar{
-      background-color: #fff;
+      background-color: $light;
       width:100%;
       height:250px;
       margin-bottom:5%;
@@ -133,9 +135,9 @@ html{overflow-x:hidden;}
     button{
       margin-top:2%;
       padding:1% 4%;
-      border: 2px solid #0062cc;
-      color:#0062cc;
-      background-color: #fff;
+      border: 2px solid $metaMenuBlue;
+      color: $metaMenuBlue;
+      background-color: $light;
     }
   }
 
@@ -153,8 +155,8 @@ html{overflow-x:hidden;}
     button{
       margin-top:2%;
       padding:1% 4%;
-      border: 2px solid #0062cc;
-      color:#0062cc;
+      border: 2px solid $metaMenuBlue;
+      color: $metaMenuBlue;
       background-color: #f0f0f8;
     }
   }
@@ -195,10 +197,10 @@ html{overflow-x:hidden;}
         position:absolute;
         top:10%;
         right:10%;
-        background-color:#0062cc;
+        background-color: $metaMenuBlue;
         height:500px;
         width:500px;
-        color:#fff;
+        color: $light;
       img{
         width:20px;
         height:20px;
@@ -223,8 +225,8 @@ html{overflow-x:hidden;}
   }
 
   #unsereKunden{
-      background-color:#0062cc;
-      color:#fff;
+      background-color: $metaMenuBlue;
+      color: $light;
       width:50%;
       height:auto;
       text-align: center;
@@ -236,10 +238,10 @@ html{overflow-x:hidden;}
   /* Slideshow container */
   .slideshow-container {
       position: relative;
-      background: #0062cc;
+      background: $metaMenuBlue;
       width:50%;
       margin:auto;
-      color:#fff;
+      color: $light;
       top:-8vw;
     }
 
@@ -261,7 +263,7 @@ html{overflow-x:hidden;}
       user-select: none;
       &:hover{
         background-color: rgba(0,0,0,0.8);
-        color: white;
+        color: $light;
       }
     }
     
@@ -275,7 +277,7 @@ html{overflow-x:hidden;}
       position: relative;
       text-align: center;
       padding: 1.5% 5% 1.5% 5%;
-      background: #0062cc;
+      background: $metaMenuBlue;
       width:auto;
       margin:auto;
       top:0;
@@ -287,7 +289,7 @@ html{overflow-x:hidden;}
       height: 10px;
       width: 10px;
       margin: 0 2px;
-      background-color:#fff;
+      background-color: $light;
       border-radius: 50%;
       display: inline-block;
       transition: background-color 0.6s ease;
@@ -414,7 +416,7 @@ html{overflow-x:hidden;}
     }
 
     #navbar{
-      justify-content: center;
+      
       ul{padding: 0;}
     } 
 
@@ -498,9 +500,9 @@ html{overflow-x:hidden;}
     }
 
     #main{ 
-      padding-top:20vw; 
+      padding-top: 20vw; 
       height: 300px;
-      p{padding-top:60%;}
+      p{padding-top: 60%;}
     }
     
     #nav {
@@ -512,7 +514,7 @@ html{overflow-x:hidden;}
       right: 3vw;
       top: 16%;
     }
-    a:hover {color: black;}
+    a:hover {color: $dark;}
   }
     
     #navbar {display:none;}
@@ -555,7 +557,7 @@ html{overflow-x:hidden;}
       height:25%;
       margin:2%;
       float:left;
-      background-color:#fff;
+      background-color: $light;
       }
       p{padding-top:60%;}
     }
@@ -601,7 +603,7 @@ html{overflow-x:hidden;}
 
   #header-pic{height:40vw;}
 
-  .author{color:#fff;}
+  .author{color: $light;}
 
   #ueberUns div:first-child{
     width:100%;
@@ -612,7 +614,7 @@ html{overflow-x:hidden;}
 
   #nav {
   a{
-  color: white;
+  color: $light;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -629,9 +631,9 @@ html{overflow-x:hidden;}
     margin-bottom: 0;
   }
 
-  .slideshow-container{top:-1vw;}
+  .slideshow-container{top: -1vw;}
 
-  #header-pic{height:50vw;}
+  #header-pic{height: 50vw;}
 
   #logo-pic{
     padding-left: 0;

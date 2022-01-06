@@ -1,0 +1,37 @@
+{
+  "name": "mappy-breakpoints",
+  "version": "0.2.3",
+  "authors": [
+    "Zell Liew <zellwk@gmail.com>"
+  ],
+  "main": "_mappy-breakpoints.scss",
+  "keywords": [
+    "breakpoints",
+    "sass",
+    "sass-maps",
+    "maps"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "true": "~2.0.2"
+  },
+  "homepage": "https://github.com/zellwk/mappy-breakpoints",
+  "_release": "0.2.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.3",
+    "commit": "e9f8e235e0c7d39e0adbbb9e8ce7d12701922b75"
+  },
+  "_source": "https://github.com/zellwk/mappy-breakpoints.git",
+  "_target": "^0.2.3",
+  "_originalSource": "mappy-breakpoints",
+  "_direct": true
+}
