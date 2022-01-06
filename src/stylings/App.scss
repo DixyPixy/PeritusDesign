@@ -11,9 +11,9 @@
 html{overflow-x:hidden;}
 
   #container{
-      width:100%;
-      height:100%;
-      margin:auto;
+      width: $fullwidth;
+      height: $fullwidth;
+      margin: auto;
       font-family: Arial, Helvetica, sans-serif;
   }
 
@@ -24,7 +24,7 @@ html{overflow-x:hidden;}
       color: $light;   
       @include mappy-bp(max-width m){height: 80px;}
       @include mappy-bp(max-width s){height: 100px;}
-      @include mappy-bp(max-width xs){width: 100%;}
+      @include mappy-bp(max-width xs){width: $fullwidth;}
   }
 
   a{
@@ -55,8 +55,8 @@ html{overflow-x:hidden;}
   }
   /*working hours*/
   #left{
-      float:left;
-      margin-left:3%;
+      float: left;
+      margin-left: 3%;
   }
 
   /*contact phone*/
@@ -115,7 +115,7 @@ html{overflow-x:hidden;}
     @include mappy-bp(max-width sm){padding: 0;}
     @include mappy-bp(max-width xs){
       display: block;
-      width: 100vw;
+      width: $mobileUlWidth;
     }
     }
     @include mappy-bp(max-width xl){width: inherit;}
@@ -130,7 +130,7 @@ html{overflow-x:hidden;}
     @include mappy-bp(max-width xxs){height: 50vw;}
   }
 
-  #header-pic img{width:100%;}
+  #header-pic img{width: $fullwidth;}
 
   .slider {
       width: 300px;
@@ -200,7 +200,7 @@ html{overflow-x:hidden;}
   }
   #sidebar{
       background-color: $light;
-      width: 100%;
+      width: $fullwidth;
       height: 250px;
       margin-bottom: 5%;
     div{
@@ -220,7 +220,7 @@ html{overflow-x:hidden;}
 
   #ueberUns{
       position: relative;
-      width: 100%;
+      width: $fullwidth;
       height: 250px;
       padding-bottom: 5%;
       background-color: #f0f0f8;
@@ -229,7 +229,7 @@ html{overflow-x:hidden;}
       margin: auto;
       padding-top: 5%;
       @include mappy-bp(max-width ssm){margin-bottom: 5%;}
-      @include mappy-bp(max-width xs){width: 100%;}
+      @include mappy-bp(max-width xs){width: $fullwidth;}
     }
     button{
       margin-top: 2%;
@@ -305,7 +305,7 @@ html{overflow-x:hidden;}
         }
         @include mappy-bp(max-width m){top:80%;}
         @include mappy-bp(max-width sm){
-          top: 100%;
+          top: $fullwidth;
           right: -500px;
         }
         @include mappy-bp(max-width xs){display: none;}
@@ -349,7 +349,7 @@ html{overflow-x:hidden;}
       color: $light;
       top: -8vw;
       @include mappy-bp(max-width xs){
-        width: 100%;
+        width: $fullwidth;
         top: -1vw;
       }
     }
@@ -364,7 +364,7 @@ html{overflow-x:hidden;}
     .next {
       cursor: pointer;
       position: absolute;
-      top: 50%;
+      top: $fullwidth / 2;
       width: auto;
       margin-top: -30px;
       padding: 16px;
@@ -451,10 +451,11 @@ html{overflow-x:hidden;}
       .hamburger{
         background: transparent;
         cursor: pointer;
-        display: block;
+        display: none;
         position: absolute;
         right: 3vw;
         top: 16%;
+        @include mappy-bp(max-width s){display: block;}
       }
       a{
         @include mappy-bp(max-width xs){
