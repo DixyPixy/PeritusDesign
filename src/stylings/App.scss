@@ -152,8 +152,8 @@ html {overflow-x:hidden;}
       padding-top: $mainPaddingLeft * 5;
       @include mappy-bp(max-width xxl){padding-top: $twenty * 3;}
       @include mappy-bp(max-width ml){padding-top: $twenty * 4;}
-      @include mappy-bp(max-width m){padding-top: $twenty * 3 + $mainPaddingLeft;}
-      @include mappy-bp(max-width s){padding-top: $twenty * 4;}
+      @include mappy-bp(max-width m){padding-top: $sidebarWidth;}
+      @include mappy-bp(max-width xs){padding-top: $imgTop * 2;}
       @include mappy-bp(max-width xxs){padding-top: $twenty * 4;}
     }
     img{
@@ -204,7 +204,7 @@ html {overflow-x:hidden;}
       height: 250px;
       margin-bottom: $mainPaddingBottom;
     div{
-      width: $twenty * 3 + $mainPaddingLeft;
+      width: $sidebarWidth;
       margin: auto;
       padding: $mainPaddingBottom 0;
       @include mappy-bp(max-width xs){width: $fullwidth;}
