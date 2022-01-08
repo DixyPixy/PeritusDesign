@@ -29,12 +29,13 @@ html {overflow-x:hidden;}
 
   a {
     &:link{
+        color: $dark;
         cursor: pointer;
         text-decoration: none; 
     }
-    &:visited{color:#000;}
+    &:visited{color: $dark;}
     &:hover{color: $metaMenuBlue;}
-}
+  }
 
   button {
     a:visited{color: $metaMenuBlue;}
@@ -97,7 +98,7 @@ html {overflow-x:hidden;}
       padding-top: $headdivsMarginLeft / 2;
       padding-left: 2%;
       padding-right: 2%;
-      color:#000;
+      color: $dark;
       width: max-content;
       &:hover{color: $metaMenuBlue;}
       @include mappy-bp(max-width xs){
